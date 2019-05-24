@@ -1,0 +1,51 @@
+@import 'styles/fonts.scss';
+@import 'styles/normalize.scss';
+@import 'styles/constants.scss';
+@import 'styles/scrollbar.scss';
+
+* {
+  font-family: 'OpenSans';
+  box-sizing: border-box;
+}
+
+html, body {
+  height : 100%;
+}
+
+body {
+  margin : 0px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+h1, h2, h3, h4, h5, th {
+  font-weight: normal;
+}
+
+input {
+  border: none;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  outline: none;
+  background-color: $gray;
+}
+
+button {
+  color: $blue;
+  border: none;
+  margin: 10px;
+  padding: 10px 50px;
+  border-radius : 10px;
+  background-color: white;
+  cursor: pointer;
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+}
+
+@import 'styles/input.scss';

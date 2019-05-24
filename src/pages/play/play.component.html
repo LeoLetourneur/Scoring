@@ -1,0 +1,24 @@
+
+<div class="title">
+  SPEED LEGO
+</div>
+
+<div class="subtitle">Remise des (du) prix à 17h00</div>
+
+<div class="content">
+  <div class="list" *ngIf="scores">
+    <div class="scope" *ngFor="let score of scores; let i = index">
+    <div class="scopi">
+      <div class="index">{{i + 1}}</div>
+      <div class="name">{{score.name}}</div>
+      <div class="score">{{ score.score | scoring }}</div>
+    </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <input [(ngModel)]="score.name" placeholder="Nom"/>
+    <input [(ngModel)]="score.score" placeholder="Score (xyyzz)"/>
+    <button (click)="pushScore()" [disabled]="disable">Ok !</button>
+  </div>
+</div>

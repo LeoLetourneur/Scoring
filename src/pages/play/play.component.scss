@@ -1,0 +1,58 @@
+@import '../../styles/constants.scss';
+
+.title {
+  margin: 40px auto;
+  text-align: center;
+  color: $blue;
+  font-size: 60px;
+}
+
+.subtitle {
+  margin: 20px auto;
+  text-align: center;
+  color: grey;
+  font-size: 30px;
+}
+
+.list {
+  height: 500px;
+  overflow-x: auto;
+  margin: 0 30px;
+  box-shadow: 0 0px 12px 1px grey;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.scope {
+  width: 100%;
+  height: 45px;
+  padding: 0 10px;
+}
+
+.scopi {
+  display: flex;
+  flex-direction: row;
+  font-size: 26px;
+}
+
+.index {
+  width: 40px;
+}
+
+.name {
+  flex-grow: 1;
+  border-bottom: 1px dashed $blue;
+}
+
+.score {
+  width: 100px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  background-color: $blue;
+  right: 0px;
+  height: 60px;
+}
